@@ -1,0 +1,24 @@
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-button{
+    transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    background: linear-gradient(to right,  #ee0979, #3b82f6);
+
+}
+.nav-button:before{
+    backdrop-filter: blur(50px);
+}
+.nav-button:hover{
+    transform: scale(1.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+.nav-button:active{
+    transform: scale(0.9) translateY(2px);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
